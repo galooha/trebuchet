@@ -51,6 +51,24 @@
       "revId": "fe7db0b9c70f030efc8d5ca137194e8091a1804d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "10885788_6f3b97dc",
+        "filename": "TEST_MAPPING",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2018-10-01T22:24:40Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1cc6bf45_0c1751e3",
+      "revId": "fe7db0b9c70f030efc8d5ca137194e8091a1804d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
