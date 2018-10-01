@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b68e0602_6afe1c87",
+        "filename": ".gitignore",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2018-10-01T21:58:19Z",
+      "side": 1,
+      "message": "Do we need a a .gitignore file for just this directory?  Is there a .gitignore file for the platform/ or platform/tools/ directories?  If we do need this .gitignore file, should we add *.trace and *.log to it?",
+      "revId": "fe7db0b9c70f030efc8d5ca137194e8091a1804d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7b742217_53d93ba6",
+        "filename": "TEST_MAPPING",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2018-10-01T21:58:19Z",
+      "side": 1,
+      "message": "Should this file be included?  I\u0027m not sure what it does, but the file name makes it seem like this may be a development artifact.",
+      "revId": "fe7db0b9c70f030efc8d5ca137194e8091a1804d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
