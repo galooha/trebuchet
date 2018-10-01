@@ -33,6 +33,24 @@
       "revId": "fe7db0b9c70f030efc8d5ca137194e8091a1804d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1cc6bf45_0c1751e3",
+        "filename": "TEST_MAPPING",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2018-10-01T22:05:16Z",
+      "side": 1,
+      "message": "TEST_MAPPING defines which tests should be run as presubmits by treehugger. It\u0027s a fairly new feature, so not much of android has TEST_MAPPING files, but it seems like in general we should be adding them.",
+      "parentUuid": "7b742217_53d93ba6",
+      "revId": "fe7db0b9c70f030efc8d5ca137194e8091a1804d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
