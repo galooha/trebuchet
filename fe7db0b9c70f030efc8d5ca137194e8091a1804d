@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "00875302_b3f65631",
+        "filename": ".gitignore",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2018-10-02T18:17:31Z",
+      "side": 1,
+      "message": ".gitignore files can be nested, and there\u0027s a syntax to unignore files ignored in the parent directory (I think it would be something like !*.trace), so this should be possible to do.",
+      "parentUuid": "219ad041_5f12f977",
+      "revId": "fe7db0b9c70f030efc8d5ca137194e8091a1804d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7b742217_53d93ba6",
         "filename": "TEST_MAPPING",
         "patchSetId": 1
