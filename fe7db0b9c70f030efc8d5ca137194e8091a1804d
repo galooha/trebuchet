@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "b3a4c8d6_ba1d695a",
+        "filename": ".gitignore",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1010103
+      },
+      "writtenOn": "2018-10-02T16:10:19Z",
+      "side": 1,
+      "message": "We typically don\u0027t do a .gitignore but it\u0027s needed here in particular because of building with either gradle or intellij, which violates the tree\u0027s rule of \"no generated files in the tree\"\n\nThe gitignore just fixes that.\n\nI didn\u0027t add *.trace because we do actually check those in for sample \u0026 test data, what *.log files?",
+      "parentUuid": "b68e0602_6afe1c87",
+      "revId": "fe7db0b9c70f030efc8d5ca137194e8091a1804d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7b742217_53d93ba6",
         "filename": "TEST_MAPPING",
         "patchSetId": 1
