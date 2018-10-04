@@ -31,13 +31,17 @@ fun reportImportProgress(read: Long, total: Long) {
     }
 }
 
-fun parseTrace(file: File): Model {
+fun parseTrace(file: File, verbose : Boolean = true): Model {
     val before = System.nanoTime()
     val task = ImportTask(PrintlnImportFeedback())
-    val model = task.import(InputStreamAdapter(file, ::reportImportProgress))
+    val model = task.import(InputStreamAdapter(file, if (verbose) ::reportImportProgress else null))
     val after = System.nanoTime()
-    val duration = (after - before) / 1000000
-    println("Parsing ${file.name} took ${duration}ms")
+
+    if (verbose) {
+        val duration = (after - before) / 1000000
+        println("Parsing ${file.name} took ${duration}ms")
+    }
+
     return model
 }
 

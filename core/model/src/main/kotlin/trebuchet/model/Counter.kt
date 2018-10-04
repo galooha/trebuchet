@@ -18,7 +18,7 @@ package trebuchet.model
 
 import trebuchet.model.fragments.CounterFragment
 
-data class CounterValue(val timestamp: Double, val count: Int)
+data class CounterValue(val timestamp: Double, val count: Long)
 
 class Counter(val name: String, val events: List<CounterValue>) {
     constructor(fragment: CounterFragment) : this(fragment.name, fragment.events) {
@@ -26,4 +26,4 @@ class Counter(val name: String, val events: List<CounterValue>) {
     }
 }
 
-infix fun Double.hasCount(value: Int): CounterValue = CounterValue(this, value)
+infix fun Double.hasCount(value: Long): CounterValue = CounterValue(this, value)
