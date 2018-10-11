@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8226b4e0_6a20a3d2",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2018-10-11T20:02:36Z",
+      "side": 1,
+      "message": "nit: Startup",
+      "range": {
+        "startLine": 19,
+        "startChar": 4,
+        "endLine": 19,
+        "endChar": 10
+      },
+      "revId": "17a20db1f74bf8e5f59cb8b980b4aa56e42d2516",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
