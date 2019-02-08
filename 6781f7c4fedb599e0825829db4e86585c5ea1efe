@@ -1,0 +1,152 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b2a78f1f_a79bdc8d",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-02-08T12:57:08Z",
+      "side": 1,
+      "message": "How would you feel about `selectEarliest` or `selectFirstInTime`? Plain `selectFirst` makes me think of returning the entry with the lowest index number in an array. Although, maybe the data structure is implicitly indexed by time, so `selectFirst` would imply by time. What do you think?",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e6e89d81_f642bf32",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-02-08T12:57:08Z",
+      "side": 1,
+      "message": "Is the cast here needed? I assume it\u0027s for a null check, but maybe the compiler\u0027s smart enough to realize that if this didn\u0027t short-circuit then ret !\u003d null.",
+      "range": {
+        "startLine": 104,
+        "startChar": 80,
+        "endLine": 104,
+        "endChar": 92
+      },
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9f673aee_60836529",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-02-08T12:57:08Z",
+      "side": 1,
+      "message": "It\u0027s a shame you can\u0027t just return it all the way out of the function.",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "154ede29_90a219c6",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-02-08T12:57:08Z",
+      "side": 1,
+      "message": "Are async slices a new concept introduced in this CL?",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "168be4b5_53588e86",
+        "filename": "trebuchet/startup-common/src/StartupCommon.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-02-08T12:57:08Z",
+      "side": 1,
+      "message": "Missing an n in launchig?",
+      "range": {
+        "startLine": 67,
+        "startChar": 13,
+        "endLine": 67,
+        "endChar": 21
+      },
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "040b30ad_ef117888",
+        "filename": "trebuchet/startup-common/src/StartupCommon.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-02-08T12:57:08Z",
+      "side": 1,
+      "message": "Maybe spell this out as reportFullyDrawnTime, or add a comment explaining what rfd stands for? It took me a moment to figure out what this meant.",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ec20335a_3a80a045",
+        "filename": "trebuchet/startup-common/src/StartupCommon.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-02-08T12:57:08Z",
+      "side": 1,
+      "message": "Is this the total amount of time spent in each scheduling state?",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "90262272_eb58cb44",
+        "filename": "trebuchet/startup-common/src/StartupCommon.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-02-08T12:57:08Z",
+      "side": 1,
+      "message": "Would this be better as three different classes instead of one class with three constructors?",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
