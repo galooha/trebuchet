@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1c97b4d7_4edaea9b",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2019-02-27T19:27:27Z",
+      "side": 1,
+      "message": "The slice collection is implicitly indexed by time, so I think first implies earliest.",
+      "parentUuid": "b2a78f1f_a79bdc8d",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e6e89d81_f642bf32",
         "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
         "patchSetId": 1
@@ -42,6 +60,30 @@
     },
     {
       "key": {
+        "uuid": "100f7ed6_c0d205cf",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2019-02-27T19:27:27Z",
+      "side": 1,
+      "message": "It is to deal with nullability, and unfortunately the compiler can\u0027t figure this one out yet.  I changed this to use a non-null assertion (!!) instead though, as that makes it clearer what is going on.",
+      "parentUuid": "e6e89d81_f642bf32",
+      "range": {
+        "startLine": 104,
+        "startChar": 80,
+        "endLine": 104,
+        "endChar": 92
+      },
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f673aee_60836529",
         "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
         "patchSetId": 1
@@ -53,6 +95,24 @@
       "writtenOn": "2019-02-08T12:57:08Z",
       "side": 1,
       "message": "It\u0027s a shame you can\u0027t just return it all the way out of the function.",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c1fda0e0_6681c26d",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2019-02-27T19:27:27Z",
+      "side": 1,
+      "message": "Agreed.  It\u0027s weird that Kotlin can\u0027t figure that one out.",
+      "parentUuid": "9f673aee_60836529",
       "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -73,6 +133,24 @@
       "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f8a6c7c2_69a3abaa",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2019-02-27T19:27:27Z",
+      "side": 1,
+      "message": "Async slices are an existing part of traces.  John added Trebuchet support for them several months ago so that we could capture the `launching` slice, which is async.  This just adds support for them to the slice iterators.",
+      "parentUuid": "154ede29_90a219c6",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -99,6 +177,30 @@
     },
     {
       "key": {
+        "uuid": "39e6212d_4c066434",
+        "filename": "trebuchet/startup-common/src/StartupCommon.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2019-02-27T19:27:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "168be4b5_53588e86",
+      "range": {
+        "startLine": 67,
+        "startChar": 13,
+        "endLine": 67,
+        "endChar": 21
+      },
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "040b30ad_ef117888",
         "filename": "trebuchet/startup-common/src/StartupCommon.kt",
         "patchSetId": 1
@@ -113,6 +215,24 @@
       "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6c941ce9_ce25bdbc",
+        "filename": "trebuchet/startup-common/src/StartupCommon.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2019-02-27T19:27:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "040b30ad_ef117888",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -133,6 +253,24 @@
     },
     {
       "key": {
+        "uuid": "c65ea8c8_b94f01d8",
+        "filename": "trebuchet/startup-common/src/StartupCommon.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2019-02-27T19:27:27Z",
+      "side": 1,
+      "message": "Yes.  Do you think this needs a comment?",
+      "parentUuid": "ec20335a_3a80a045",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "90262272_eb58cb44",
         "filename": "trebuchet/startup-common/src/StartupCommon.kt",
         "patchSetId": 1
@@ -144,6 +282,24 @@
       "writtenOn": "2019-02-08T12:57:08Z",
       "side": 1,
       "message": "Would this be better as three different classes instead of one class with three constructors?",
+      "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5540f7e9_7dd5e51c",
+        "filename": "trebuchet/startup-common/src/StartupCommon.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2019-02-27T19:27:27Z",
+      "side": 1,
+      "message": "Four constructors :-)  And I don\u0027t think so, but I\u0027m open to suggestions.  All four cases represent the same thing, just with various amounts of debugging information.  I\u0027m not sure what I would call the four separate classes if I split it apart.",
+      "parentUuid": "90262272_eb58cb44",
       "revId": "6781f7c4fedb599e0825829db4e86585c5ea1efe",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
