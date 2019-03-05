@@ -1,7 +1,8 @@
 {
   "presubmit": [
     {
-      "name": "trebuchet-core-tests"
+      "name": "trebuchet-core-tests",
+      "host": true
     }
   ]
 }
