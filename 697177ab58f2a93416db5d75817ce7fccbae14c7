@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cd1a29f8_5da94526",
+        "filename": "trebuchet/startup-common/src/StartupCommon.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 1010103
+      },
+      "writtenOn": "2019-03-07T18:11:20Z",
+      "side": 1,
+      "message": "you could also do this as:\n\nit.slices.firstOrNull()?.startTime ?: Double.POSITIVE_INFINITY",
+      "range": {
+        "startLine": 212,
+        "startChar": 143,
+        "endLine": 217,
+        "endChar": 25
+      },
+      "revId": "697177ab58f2a93416db5d75817ce7fccbae14c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
