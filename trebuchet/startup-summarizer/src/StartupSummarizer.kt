@@ -26,11 +26,15 @@
  */
 
 import java.io.File
-import trebuchet.extras.parseTrace
-import trebuchet.model.SchedulingState
+
 import kotlin.math.pow
 import kotlin.math.sqrt
 import kotlin.system.exitProcess
+
+import trebuchet.extras.parseTrace
+import trebuchet.model.SchedulingState
+import trebuchet.util.slices.*
+import trebuchet.util.time.*
 
 /*
  * Constants
