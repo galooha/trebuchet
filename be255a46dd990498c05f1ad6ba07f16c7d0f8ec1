@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "923340a0_d44c9059",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-03-11T16:52:38Z",
+      "side": 1,
+      "message": "Package names are normally all lower case, right? I don\u0027t know if this is part of the style guide though.",
+      "revId": "be255a46dd990498c05f1ad6ba07f16c7d0f8ec1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5843a286_c6228157",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-03-11T16:52:38Z",
+      "side": 1,
+      "message": "This is something to discuss/address after this CL, but I don\u0027t really love the MissingSliceException. This one seems to be used when you try to search for something and that thing is not found. This sounds like normal, expected behavior, and not something exceptional. But, this also depends on general philosophies of error handling.\n\nAlthough, given that we also have the OrNull versions of most of the search functions, having this exception makes sense for the ones that promise not to return null.",
+      "revId": "be255a46dd990498c05f1ad6ba07f16c7d0f8ec1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8f37d5fd_316b784f",
+        "filename": "core/common/src/test/kotlin/trebuchet/task/ImportTaskTest.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-03-11T16:52:38Z",
+      "side": 1,
+      "message": "Would it work to just have this as trebuchet.queries.*?",
+      "revId": "be255a46dd990498c05f1ad6ba07f16c7d0f8ec1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e9275984_49c734e3",
+        "filename": "core/common/src/test/kotlin/trebuchet/task/ImportTaskTest.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-03-11T16:52:38Z",
+      "side": 1,
+      "message": "It\u0027d be good to have a test that runs these query functions that doesn\u0027t need sample data so we can still run them on TreeHugger. I wouldn\u0027t block this CL on it though, since this was already a gap we had in our test coverage.",
+      "revId": "be255a46dd990498c05f1ad6ba07f16c7d0f8ec1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
