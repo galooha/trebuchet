@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5cc1aa55_424fcb5b",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2019-03-11T17:27:01Z",
+      "side": 1,
+      "message": "I think so, but am uncertain.  It seemed odd to have `package trebuchet.queries.slice_queries`.",
+      "parentUuid": "923340a0_d44c9059",
+      "revId": "be255a46dd990498c05f1ad6ba07f16c7d0f8ec1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5843a286_c6228157",
         "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "0ec5ece0_8b1d7b0c",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2019-03-11T17:27:01Z",
+      "side": 1,
+      "message": "I think the \"exceptionalness\" of not finding a slice depends on what slice you are looking for.  In some situations not finding an expected slice can indicate a problem with the input data, which seems like an exception to me.",
+      "parentUuid": "5843a286_c6228157",
+      "revId": "be255a46dd990498c05f1ad6ba07f16c7d0f8ec1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8f37d5fd_316b784f",
         "filename": "core/common/src/test/kotlin/trebuchet/task/ImportTaskTest.kt",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2019-03-11T16:52:38Z",
       "side": 1,
       "message": "Would it work to just have this as trebuchet.queries.*?",
+      "revId": "be255a46dd990498c05f1ad6ba07f16c7d0f8ec1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bb7b35a8_899cf697",
+        "filename": "core/common/src/test/kotlin/trebuchet/task/ImportTaskTest.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1047255
+      },
+      "writtenOn": "2019-03-11T17:27:01Z",
+      "side": 1,
+      "message": "Unfortunately not :-( You can\u0027t import packages directly.",
+      "parentUuid": "8f37d5fd_316b784f",
       "revId": "be255a46dd990498c05f1ad6ba07f16c7d0f8ec1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
