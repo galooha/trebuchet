@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "aa7a28a0_c642b2d4",
+        "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-03-11T17:44:06Z",
+      "side": 1,
+      "message": "What about just calling it trebuchet.queries? That would also solve the import comment I had later.",
+      "parentUuid": "5cc1aa55_424fcb5b",
+      "revId": "be255a46dd990498c05f1ad6ba07f16c7d0f8ec1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5843a286_c6228157",
         "filename": "core/common/src/main/kotlin/trebuchet/queries/SliceQueries.kt",
         "patchSetId": 1
@@ -101,6 +119,24 @@
       "side": 1,
       "message": "Unfortunately not :-( You can\u0027t import packages directly.",
       "parentUuid": "8f37d5fd_316b784f",
+      "revId": "be255a46dd990498c05f1ad6ba07f16c7d0f8ec1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5aafdca8_e716b316",
+        "filename": "core/common/src/test/kotlin/trebuchet/task/ImportTaskTest.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1335232
+      },
+      "writtenOn": "2019-03-11T17:44:06Z",
+      "side": 1,
+      "message": "What if you renamed trebuchet.queries.SliceQueries to just trebuchet.queries?",
+      "parentUuid": "bb7b35a8_899cf697",
       "revId": "be255a46dd990498c05f1ad6ba07f16c7d0f8ec1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
