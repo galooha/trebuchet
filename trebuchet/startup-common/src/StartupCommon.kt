@@ -29,6 +29,7 @@ import trebuchet.model.Model
 import trebuchet.model.ProcessModel
 import trebuchet.model.SchedulingState
 import trebuchet.model.base.Slice
+import trebuchet.model.fragments.AsyncSlice
 import trebuchet.queries.slices.*
 import trebuchet.util.slices.*
 import trebuchet.util.time.*
@@ -260,4 +261,51 @@ fun aggregateSliceInfo(infoMap : MutableAggregateSliceInfoMap, sliceContents : S
         val (uniqueValueCount, uniqueValueDuration) = aggInfo.values.getOrDefault(sliceContents.value as String, Pair(0, 0.0))
         aggInfo.values[sliceContents.value as String] = Pair(uniqueValueCount + 1, uniqueValueDuration + duration)
     }
+}
+
+fun Model.getEventAndChildren(parentEvent: String, thresholdMs: Int = 0, otherName: String = "Other"): List<Slice> {
+    val ret = arrayListOf<Slice>()
+    val systemServerProc = this.findProcess(PROC_NAME_SYSTEM_SERVER)
+    var started = false
+    var finished = false;
+    var childrenLevel = -1
+    var otherDuration: Double = 0.0
+
+    systemServerProc.traverseSlices(object : SliceTraverser {
+        var depth = 0;
+
+        override fun beginSlice(slice: Slice): TraverseAction {
+            ++depth
+            if (slice.name == parentEvent) {
+                ret.add(slice)
+                childrenLevel = depth + 1
+                started = true
+            } else if (!started) {
+                return TraverseAction.VISIT_CHILDREN
+            }
+            if (!finished && depth == childrenLevel) {
+                val durationMs = slice.duration * 1000;
+                if (durationMs > thresholdMs) {
+                    ret.add(slice)
+                } else {
+                    otherDuration += slice.duration
+                }
+            }
+            return TraverseAction.VISIT_CHILDREN
+        }
+
+        override fun endSlice(slice: Slice) {
+            depth--
+            if (slice.name == parentEvent) {
+                finished = true;
+            }
+        }
+    })
+
+    if (otherDuration > 0) {
+        var otherSlice = AsyncSlice(name = otherName, startTime = 0.0, endTime = otherDuration, cookie = 0, didNotFinish = false, startThreadId = 0, endThreadId = 0)
+        ret.add(otherSlice)
+    }
+
+    return ret
 }
