@@ -46,6 +46,14 @@ import trebuchet.util.time.*
  */
 
 fun measureStartup(model: Model) {
+
+    val slices = model.getEventAndChildren("StartServices", 10);
+    slices.forEach() {
+        val durationMs = it.duration * 1000;
+        println("Dude: ${it.name} Sweet: $durationMs");
+    }
+
+
     val startupEvents = model.getStartupEvents()
 
     println("Found ${startupEvents.count()} startup events.")
@@ -109,7 +117,7 @@ fun main(args: Array<String>) {
     val filename = args[0]
 
     println("Opening `$filename`")
-    val trace = parseTrace(File(filename), verbose = false)
+    val trace = parseTrace(File(filename), verbose = true)
 
     measureStartup(trace)
 }
