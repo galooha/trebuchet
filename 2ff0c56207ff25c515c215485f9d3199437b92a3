@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b62a0d3e_9189e1ca",
+        "filename": "trebuchet/startup-common/src/StartupCommon.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 1010103
+      },
+      "writtenOn": "2019-05-21T20:26:09Z",
+      "side": 1,
+      "message": "I\u0027d recommend putting this in your own project\u0027s files first. If it turns out to be common it can go in common, but this looks a bit overly-specific to your problem.",
+      "range": {
+        "startLine": 266,
+        "startChar": 10,
+        "endLine": 266,
+        "endChar": 29
+      },
+      "revId": "2ff0c56207ff25c515c215485f9d3199437b92a3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "418be686_abcdc8e8",
+        "filename": "trebuchet/system-server-analyzer/src/SystemServerAnalyzer.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1010103
+      },
+      "writtenOn": "2019-05-21T20:26:09Z",
+      "side": 1,
+      "message": "Instead of this I\u0027d suggest maybe something a bit more flexible like:\n\ninline fun \u003creified T\u003e Slice?.ifGroup(func: (SliceGroup) -\u003e T): T? {\n    if (this is SliceGroup) {\n        return func(this)\n    }\n    return null\n}\n\nfun Double.durationString(): String {\n    if (this \u003c 1_000) {\n        return \"%d ns\".format(this)\n    }\n    if (this \u003c 1_000_000) {\n        return \"%.2f us\".format(this)\n    }\n    return \"%.3f ms\".format(this)\n}\n\nfun measureServiceStartup(model: Model) {\n    model.slices().firstOrNull {\n        it.name \u003d\u003d \"StartServices\" \u0026\u0026 it is SliceGroup\n    }.ifGroup {\n        println(\"StartServices: ${it.duration.durationString()}\")\n        val childDurations \u003d it.children.sumByDouble { service -\u003e\n            println(\"${service.name}: ${service.duration.durationString()}\")\n            service.duration\n        }\n        println(\"Other: ${(it.duration - childDurations).durationString()}\")\n    }\n}\n\nI think that\u0027s basically the right logic. The function is fine, too, I think this will just compose \u0026 evolve more naturally.",
+      "revId": "2ff0c56207ff25c515c215485f9d3199437b92a3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
