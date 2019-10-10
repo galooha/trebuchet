@@ -52,7 +52,7 @@ class FtraceImporter(val feedback: ImportFeedback) : Importer {
             } else {
                 score++
                 if (it === CpuBufferStarted) {
-                    state = FtraceImporterState()
+                    // state = FtraceImporterState()
                 } else {
                     state.importEvent(it)
                 }
