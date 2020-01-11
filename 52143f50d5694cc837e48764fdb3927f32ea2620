@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "8f191b38_6efdda3b",
+        "filename": "trebuchet/user-switch-analyzer/build.gradle",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1581796
+      },
+      "writtenOn": "2020-01-11T01:32:27Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "d2f0e5ba_3dcbc410",
+      "range": {
+        "startLine": 2,
+        "startChar": 13,
+        "endLine": 2,
+        "endChar": 17
+      },
+      "revId": "52143f50d5694cc837e48764fdb3927f32ea2620",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0137c1a3_6bdf589b",
         "filename": "trebuchet/user-switch-analyzer/src/UserSwitchAnalyzer.kt",
         "patchSetId": 2
@@ -45,6 +69,30 @@
       "revId": "52143f50d5694cc837e48764fdb3927f32ea2620",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "566a9d90_fa7973b7",
+        "filename": "trebuchet/user-switch-analyzer/src/UserSwitchAnalyzer.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1581796
+      },
+      "writtenOn": "2020-01-11T01:32:27Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "0137c1a3_6bdf589b",
+      "range": {
+        "startLine": 2,
+        "startChar": 13,
+        "endLine": 2,
+        "endChar": 17
+      },
+      "revId": "52143f50d5694cc837e48764fdb3927f32ea2620",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
