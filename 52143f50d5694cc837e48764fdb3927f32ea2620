@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d2f0e5ba_3dcbc410",
+        "filename": "trebuchet/user-switch-analyzer/build.gradle",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1013984
+      },
+      "writtenOn": "2020-01-11T01:22:25Z",
+      "side": 1,
+      "message": "2020",
+      "range": {
+        "startLine": 2,
+        "startChar": 13,
+        "endLine": 2,
+        "endChar": 17
+      },
+      "revId": "52143f50d5694cc837e48764fdb3927f32ea2620",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0137c1a3_6bdf589b",
+        "filename": "trebuchet/user-switch-analyzer/src/UserSwitchAnalyzer.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1013984
+      },
+      "writtenOn": "2020-01-11T01:22:25Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 2,
+        "startChar": 13,
+        "endLine": 2,
+        "endChar": 17
+      },
+      "revId": "52143f50d5694cc837e48764fdb3927f32ea2620",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
