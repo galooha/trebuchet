@@ -1,0 +1,11 @@
+Open-Source-Licensing+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Code-Review+1: Felipe Leme <felipeal@google.com>
+Code-Review+2: John Reck <jreck@google.com>
+Autosubmit+1: Mayank Garg <gargmayank@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Sat, 11 Jan 2020 03:24:36 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/tools/trebuchet/+/1204767
+Project: platform/tools/trebuchet
+Branch: refs/heads/master
