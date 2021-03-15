@@ -16,6 +16,24 @@
       "message": "Does having the TEST_MAPPING hurt? Can we instead leave this with a comment saying that this is what\u0027s automatically being done as a local reminder?\n\nI rather like having the TEST_MAPPING control instead of this just happening silently though :(",
       "revId": "9991556360727833e1e372737bbd77403e2a79c6",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8f8895b_4c22b038",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1121894
+      },
+      "writtenOn": "2021-03-15T20:03:20Z",
+      "side": 1,
+      "message": "It \"hurts\" in the sense that it\u0027s currently running twice (resource waste).\n\nI can add a comment above the build target about presubmit if that provides better context for someone reading through build files ?\n\nBut generally, we don\u0027t want to keep TEST_MAPPING file around for those tests, even if it feels \"safe\". We want that feeling about testing to change: Unit Tests are being run simply because they exists. (i.e. A target cannot exists \u0026 be broken)",
+      "parentUuid": "696297d1_e3920b46",
+      "revId": "9991556360727833e1e372737bbd77403e2a79c6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
