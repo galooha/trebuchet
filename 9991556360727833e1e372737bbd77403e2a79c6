@@ -52,6 +52,24 @@
       "parentUuid": "a8f8895b_4c22b038",
       "revId": "9991556360727833e1e372737bbd77403e2a79c6",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f24087fa_ca4424c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1121894
+      },
+      "writtenOn": "2021-03-15T22:24:01Z",
+      "side": 1,
+      "message": "so far so good yes.\n\n(we are experimenting in parallel smarter execution actually based on dependency graph rather than manually configured via TEST_MAPPING)",
+      "parentUuid": "d7c68e95_70a6ac71",
+      "revId": "9991556360727833e1e372737bbd77403e2a79c6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
