@@ -34,6 +34,24 @@
       "parentUuid": "696297d1_e3920b46",
       "revId": "9991556360727833e1e372737bbd77403e2a79c6",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7c68e95_70a6ac71",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010103
+      },
+      "writtenOn": "2021-03-15T20:22:17Z",
+      "side": 1,
+      "message": "I thought TEST_MAPPING was more about being able to pick if a test is in presubmit or postsubmit, or the context in which it\u0027s worth being in presubmit.\n\nIf it\u0027s feasible that all host-side tests are just always in presubmit without being a significant slowdown then sure LGTM",
+      "parentUuid": "a8f8895b_4c22b038",
+      "revId": "9991556360727833e1e372737bbd77403e2a79c6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
