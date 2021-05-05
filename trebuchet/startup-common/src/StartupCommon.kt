@@ -115,7 +115,7 @@ fun Model.findProcess(queryName: String,
                     map { it.slices }.
                     filter { it.isNotEmpty() }.
                     map { it.first().startTime }.
-                    min() ?: throw MissingProcessInfoException(process.id)
+                    minOrNull() ?: throw MissingProcessInfoException(process.id)
 
             if (firstSliceStart in lowerBound..upperBound) {
                 return process
