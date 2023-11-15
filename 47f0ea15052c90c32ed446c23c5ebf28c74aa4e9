@@ -16,6 +16,23 @@
       "message": "PTAL\nTY",
       "revId": "47f0ea15052c90c32ed446c23c5ebf28c74aa4e9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d2f8fc2_0641b72d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1089769
+      },
+      "writtenOn": "2023-11-15T01:00:46Z",
+      "side": 1,
+      "message": "Hi John, could you mind taking a look at this cherry-pick?",
+      "revId": "47f0ea15052c90c32ed446c23c5ebf28c74aa4e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
