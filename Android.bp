@@ -13,7 +13,6 @@
 // limitations under the License.
 
 package {
-    default_team: "trendy_team_android_core_graphics_stack",
     default_applicable_licenses: ["tools_trebuchet_license"],
 }
 
@@ -114,7 +113,7 @@ java_binary_host {
     ],
     static_libs: [
         "trebuchet-core",
-        "trebuchet-startup-common",
+        "trebuchet-startup-common"
     ],
 }
 
@@ -127,7 +126,7 @@ java_binary_host {
     ],
     static_libs: [
         "trebuchet-core",
-        "trebuchet-startup-common",
+        "trebuchet-startup-common"
     ],
 }
 
